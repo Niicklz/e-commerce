@@ -1,0 +1,60 @@
+button {
+   
+    padding: 0.6rem 1rem;
+    color: var(--blue);
+    border: 2px solid var(--blue);
+    background-color: var(--white);
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: bold;
+    font-size: 0.7rem;
+
+}
+
+.button--standard:hover {
+    background-color: var(--blue);
+    color: var(--white);
+
+}
+
+.button--standard:active {
+    background-color: greenyellow;
+    color: black;
+    border: 1px solid greenyellow;
+
+}
+
+.button--blue {
+    background-color: var(--blue);
+    color: var(--white);
+}
+.button--blue:hover {
+    color: var(--blue);
+    background-color: var(--white);
+
+}
+
+
+.button--size-fullWidth {
+    width: 100%;
+}
+
+.button--size-sm {
+    padding: 0.4rem 0.8rem;
+   
+    max-width: 110px;
+}
+
+
+@media (min-width: 1024px) {
+    .button--size-big {
+        width: 100%;
+    }
+    
+    .button--size-sm {
+        padding: 0.8rem 1.2rem;
+       
+        max-width: 140px;
+    }
+    
+}
