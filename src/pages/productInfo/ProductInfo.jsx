@@ -3,7 +3,7 @@ import { useLocation } from "react-router";
 import { REQUEST_STATUS, useFetch } from "../../utilites/useFetch";
 import { ProductCard } from "../../components/ProductCard/ProductCard";
 import "./productInfo.css"
-import { shortDescription } from "../../utilites/shortDescription";
+
 import { NotFoundPage } from "../NotFoundPage/NotFoundPage";
 
 export const ProductInfo = () => {
@@ -33,7 +33,7 @@ export const ProductInfo = () => {
   }, [pathname]);
  
   
-  console.log(category);
+  
   
 
   return (

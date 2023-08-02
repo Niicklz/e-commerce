@@ -23,7 +23,7 @@ export const SpecificProduct = () => {
  
   
 
-  console.log(info);
+
   
 
 
@@ -34,7 +34,7 @@ export const SpecificProduct = () => {
       {status === REQUEST_STATUS.LOADING && <div className="lds-ring"><div></div><div></div><div></div><div></div></div>}
       {status === REQUEST_STATUS.SUCCESS && info.map(item => {
       if(item.id == productId) {
-        console.log(item)
+       
         return (<SingleProduct key={item.id} title={item.title} image={item.image} price={item.price} description={item.description}/>)
       }
     })        

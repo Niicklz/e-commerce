@@ -20,7 +20,7 @@ useEffect(()=> {
   getData()
 }, [])
 
-console.log(status);
+
 
   return (
     <div>

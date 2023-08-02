@@ -11,7 +11,7 @@ export const ProductCard = ({category, imgSrc, title, price, description, hidden
 
   const changeHiddenValue = () => {
     setHiddenValue((hiddenValue)=> !hiddenValue )
-    console.log(category);
+    
   }
   
   return (

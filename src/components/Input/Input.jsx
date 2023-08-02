@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./input.css";
 import { Button } from "../Button/Button";
-import { useFetch } from "../../utilites/useFetch";
+
 import { getCategories } from "../../utilites/getCategories";
-import { useLocation, useNavigate } from "react-router";
+import { useNavigate } from "react-router";
 
 export const Input = ({
   placeholder = "ola",
@@ -27,7 +27,7 @@ export const Input = ({
     const data = await getCategories();
 
     setCategories(data);
-    console.log(categories);
+   
   };
 
   const handleChangeValue = ({ target }) => {
@@ -38,10 +38,10 @@ export const Input = ({
     );
 
     if (target.value.length > 0) {
-      console.log("filtrandoo....");
+      
       setSuggestions(filteredSuggestions);
     } else {
-      console.log("vacio!");
+      
       setSuggestions([]);
     }
   };

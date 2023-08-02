@@ -17,7 +17,7 @@ export const MainPage = () => {
 
   const handleSearchCategory = (category) => {
     getData(`https://fakestoreapi.com/products/category/${category}`);
-    console.log(data);
+   
   };
 
   const handleTogglerButton = () => {
